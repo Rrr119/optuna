@@ -42,6 +42,7 @@ sampler_class_with_seed: dict[str, Callable[[int], BaseSampler]] = {
     "univariate TPESampler": lambda seed: optuna.samplers.TPESampler(
         multivariate=False, seed=seed
     ),
+    "AdaptiveTPESampler": lambda seed: optuna.samplers.AdaptiveTPESampler(seed=seed),
     "CmaEsSampler": lambda seed: optuna.samplers.CmaEsSampler(seed=seed),
     "separable CmaEsSampler": lambda seed: optuna.samplers.CmaEsSampler(
         seed=seed, use_separable_cma=True

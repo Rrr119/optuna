@@ -9,11 +9,13 @@ from optuna.samplers._nsgaiii._sampler import NSGAIIISampler
 from optuna.samplers._partial_fixed import PartialFixedSampler
 from optuna.samplers._qmc import QMCSampler
 from optuna.samplers._random import RandomSampler
+from optuna.samplers._tpe.adaptive_sampler import AdaptiveTPESampler
 from optuna.samplers._tpe.sampler import TPESampler
 from optuna.samplers.nsgaii._sampler import NSGAIISampler
 
 
 __all__ = [
+    "AdaptiveTPESampler",
     "BaseSampler",
     "BaseGASampler",
     "BruteForceSampler",
